@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    *font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*header superior*/
+.header__superior{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-image: url(../IMG/fondo\ azul\ igm.jpg);
+}
+
+.logo img{
+    width: 150px;
+}
+
+.subtitulo img{
+    width: 400px;
+}
+
+#input-search{
+    width: 300px;
+    *padding: 10px;
+    height: 50px;
+    font-size: 20px;
+    text-indent: 5px;
+}
+.content-search{
+    width: 44%;
+    height: 150px;
+    position: fixed;
+    top:70px ;
+    left: 1060px;
+    background: rgba(0, 0, 0,0.3);
+    display: none;
+}
+.content-table{
+    width: 50%;
+    *max-height: 100px;
+    height: 150px;
+    background: rgba(0, 0, 0,0.3);
+    top: 70px;
+    left: 100px;
+    *margin-left: 100px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    
+    
+}
+.content-table table{
+    width: 100%;
+}
+tbody tr td a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+tbody tr td a:hover{
+    background: rgba(0, 0, 0,0.3);
+}
+
+#table_length, #table_filter,#table_info, #table_paginate{
+    display: none;
+}
+
+
+
+/*barra menu*/
+
+.container__menu{
+    width: 100%;
+    height: 60px;
+    background: #01254f;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul  li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li:first-child > a{
+    background-image: url(../IMG/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover > a{
+    background-image: url(../IMG/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+#selected{
+    transform: scale(1.1);
+    background-color: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*submenu*/
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    *background: #fff;
+    background-image: url(../IMG/celeste\ arrugado.jpg);
+    position: absolute;
+    top: 75px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display:  block;
+    color: rgb(14, 17, 48) 35, 113);
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+    background: #0074c7;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+
+/*articulos*/
+
+main{
+    background: #f0f0f0;
+    padding: 40px 20px;
+    margin-top: 194px;
+}
+article{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+}
+
+/*elementos responsivos*/
+
+.icon__menu{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+
+    .search input{
+        display: none;
+    }
+
+    .header__superior{
+        padding: 1px;
+    }
+
+    .logo img{
+        width: 60px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #023877;
+        position: fixed;
+        left: 0;
+        top: 125px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav  > ul > li:hover ul{
+        top: 50px;
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*portada*/
+
+
+.container-portada{
+    width: 100%;
+    height: 500px;
+    background-image: url(../IMG/fondo\ cerros.jpg);
+    background-size: cover;
+    animation: movimiento 20s infinite linear alternate;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left,black,#0672d0);
+    opacity: 0;
+}
+
+.center{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*potosi*/
+
+.subtitulo1 img{
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.subtitulo2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    *display: flex;
+    justify-content: center;
+}
+
+.imagen-1 {
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-1:hover{
+    transform: scale(3);
+}
+.imagen-2 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-2:hover{
+    transform: scale(3);
+}
+.imagen-3 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-3:hover{
+    transform: scale(3);
+}
+
+.contenedor1 {
+    *display: flex;
+    *justify-content: center;
+    margin-left: 200px;
+}
+
+.imagen-4 {
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-4:hover{
+    transform: scale(3);
+}
+
+.imagen-5 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-5:hover{
+    transform: scale(3);
+}
+.imagen-6 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-6:hover{
+    transform: scale(3);
+}
+
+.Boton{
+    text-align: center;
+}
+.btn1{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 208, 7);
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.btn1:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

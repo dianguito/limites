@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+.subtitulo img{
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* portada*/
+
+
+.container-portada{
+    width: 100%;
+    height: 1500px;
+    background-image: url(../IMG/fondo\ cerros.jpg);
+    background-size: cover;
+    animation: movimiento 20s infinite linear alternate;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagen1{
+
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen1:hover{
+
+    transform: scale(2);
+}
+.imagen2{
+
+    width: 100px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 0px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen2:hover{
+
+    transform: scale(2);
+}
+
+.imagen3{
+
+    width: 60px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen3:hover{
+
+    transform: scale(2);
+}
+.boton{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 208, 7);
+    padding: 15px;
+    text-decoration: none;
+    margin: 0;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.3);
+}
+
+
+/*potosi*/
+
+.subtitulo1 img{
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.subtitulo2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    *display: flex;
+    justify-content: center;
+}
+
+.imagen-1 {
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-1:hover{
+    transform: scale(3);
+}
+.imagen-2 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-2:hover{
+    transform: scale(3);
+}
+.imagen-3 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-3:hover{
+    transform: scale(3);
+}
+
+.contenedor1 {
+    *display: flex;
+    *justify-content: center;
+    margin-left: 200px;
+}
+
+.imagen-4 {
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-4:hover{
+    transform: scale(3);
+}
+
+.imagen-5 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-5:hover{
+    transform: scale(3);
+}
+.imagen-6 {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-6:hover{
+    transform: scale(3);
+}
+
+.Boton{
+    text-align: center;
+}
+.btn1{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 208, 7);
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.btn1:hover{
+    transform: scale(1.3);
+}

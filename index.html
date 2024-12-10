@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu con subemenu - MagtimusPro</title>
+    <script src="https://kit.fontawesome.com/550f9cb73d.js" crossorigin="anonymous"></script>
+    <time>Portada en Movimiento</time>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="header__superior">
+            <div class="logo">
+                <img src="IMG/igm.png" alt="">
+            </div>
+            <div class="subtitulo">
+                <img src="IMG/coollogo_com-322943671.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search"  id= "input-search" placeholder="Demarcación que desea ver?">
+                
+                <div class="content-search">
+                    <div class="content-table">
+                        <table id="table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="lapaz.html">La Paz - Oruro</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Oruro - Potosi</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Oruro - Cochabamba</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Potosi - Cochabamba</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Cochabamba - Santa Cruz</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Chuquisaca - Santa Cruz</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">conocer</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id="#label__check" for="check__menu">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="selected"></a></li>
+                        <li><a href="#">Interdepartamental</a>
+                            <ul>
+                                <li><a href="LA PAZ.html">La Paz</a></li>
+                                <li><a href="ORURO.html">Oruro</a></li>
+                                <li><a href="potosi.html">Potosi</a></li>
+                                <li><a href="COCHA.html">Cochabamba</a></li>
+                                <li><a href="CHUQUI.html">Chuquisaca</a></li>
+                                <li><a href="#">Tarija</a></li>
+                                <li><a href="SANTA.html">Santa Cruz</a></li>
+                                <li><a href="#">Beni</a></li>
+                                <li><a href="#">Pando</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">Intradepartamental</a>
+                            <ul>
+                                <li><a href="lapaz.html">La paz</a></li>
+                                <li><a href="ruro.html">Oruro</a></li>
+                                <li><a href="otosi.html">Potosi</a></li>
+                                <li><a href="#">Cochabamba</a></li>
+                                <li><a href="chuquisaca.html">Chuquisaca</a></li>
+                                <li><a href="tarija.html">Tarija</a></li>
+                                <li><a href="#">Santa Cruz</a></li>
+                                <li><a href="#">Beni</a></li>
+                                <li><a href="#">Pando</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Internacional</a>
+                            <ul>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1L3CSJACdBIBY2cp_kVipx3ZDCHqz3JI&usp=sharing" target="_blank" >Peru</a></li>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1L3CSJACdBIBY2cp_kVipx3ZDCHqz3JI&usp=sharing" target="_blank">Chile</a></li>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1L3CSJACdBIBY2cp_kVipx3ZDCHqz3JI&usp=sharing" target="_blank">Argentina</a></li>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1L3CSJACdBIBY2cp_kVipx3ZDCHqz3JI&usp=sharing" target="_blank">Paraguay</a></li>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1L3CSJACdBIBY2cp_kVipx3ZDCHqz3JI&usp=sharing" target="_blank">Brasil</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Conpendio Normativa</a>
+                            <ul>
+                                <li><a href="https://mineria.gob.bo/juridica/20120131-11-50-26.pdf" target="_blank">Ley 339</a></li>
+                                <li><a href="https://www.presidencia.gob.bo/images/Autonomia/documentos/DGOT-AIOC/limites/1NORMAS/3%20DECRETO%20SUPREMO%20REGLAMENTARIO%20N%C2%B0%201560.pdf" target="_blank">D.S. Nro. 1560</a></li>
+                                <li><a href="https://presidencia.gob.bo/images/Autonomia/documentos/DGOT-AIOC/limites/1NORMAS/4%20RESOLUCION%20MINISTERIAL%20N%C2%B0%20057.pdf" target="_blank">Normas tecnicas</a></li>
+                                <li><a href="#">Formularios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contactos</a></li>
+                            <ul>
+                        
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="container-portada">
+            <div class="center">
+                <a 
+                href="https://www.youtube.com/watch?v=U3ddYIqnAp8" target="_blank"><img src="IMG/logo-removebg-preview.png" alt="Mi Imagen">
+                </a>
+                <h1>Tu contenido aqui</h1>
+            </div>
+            <div class="capa-gradient"></div>
+            <div class="container-details">
+                <div class="details">
+                    <h1></h1>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <script src="js/search.js"></script>
+    
+
+</body>
+</html>
